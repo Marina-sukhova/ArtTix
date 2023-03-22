@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="grid.css">
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js" defer></script>
+    <script src="/js/validation.js" defer></script>
+    <title>The ArtHouse Tix</title>
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+    <script src="https://kit.fontawesome.com/f04dcfa3ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_box">
+            <h1 id="title">Sign Up</h1>
+            <form action="connect.php" method="post">
+                <div class="input-group">
+                    <div class="input_field" id="namefield">
+                        <i class="fa-regular fa-user"></i>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="input_field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" placeholder="Email" name="email"required>
+                    </div>
+                    <div class="input_field">
+                        <i class="fa-regular fa-key"></i>
+                        <input type="password" placeholder="Password" name="password" required>
+                    </div>
+                    <div class="input_field">
+                        <i class="fa-regular fa-key"></i>
+                        <input type="password" placeholder="Repeat password" name="password_conf" required>
+                    </div>
+                    <p>Alredy have an account? <a href="/login.php">Log In!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="submit" name="register" id="signupbtn">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
